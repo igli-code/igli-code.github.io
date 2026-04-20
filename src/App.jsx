@@ -406,7 +406,7 @@ const App = () => {
               </div>
             </div>
             <div className="md:w-1/2 p-10 bg-slate-50">
-          <form 
+              <form 
                 className="space-y-4" 
                 action="https://formspree.io/f/mojylgok" 
                 method="POST"
