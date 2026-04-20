@@ -401,7 +401,7 @@ const App = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <Building2 className="w-5 h-5 text-amber-500 mt-1" />
-                  <span>Oakville, ON, L6H 0R7</span>
+                  <span>3089 Cascade Common<br/>Oakville, ON, L6H 0R7</span>
                 </div>
               </div>
             </div>
