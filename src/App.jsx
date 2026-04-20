@@ -393,18 +393,24 @@ const App = () => {
               <h2 className="text-3xl font-extrabold mb-4">Start with an Audit</h2>
               <p className="text-slate-300 mb-8 text-sm leading-relaxed">
                 Lost a recent bid? Confused by the new "Buy Canadian" mandates? Get a comprehensive Procurement Readiness Audit. We'll review your capabilities, registrations, and past bids to build your strategy.
+                <br /><br />
+                <strong className="text-white">Please contact us using the form beside or directly:</strong>
               </p>
               <div className="space-y-4 text-sm text-slate-300">
-                <div className="flex items-center gap-3">
-                  <Briefcase className="w-5 h-5 text-amber-500" />
-                  Igli Xhango, Director
-                </div>
                 <div className="flex items-start gap-3">
-                  <Building2 className="w-5 h-5 text-amber-500 mt-1" />
-                  <span>3089 Cascade Common<br/>Oakville, ON, L6H 0R7</span>
+                  <Briefcase className="w-5 h-5 text-amber-500 mt-1" />
+                  <div className="leading-relaxed">
+                    <span className="text-white font-bold text-base">Igli Xhango</span><br/>
+                    Director | Stone Procurement Inc.<br/>
+                    (416) 262-1680<br/>
+                    <a href="mailto:igli@stoneprocurement.net" className="hover:text-amber-400 transition-colors">igli@stoneprocurement.net</a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Building2 className="w-5 h-5 text-amber-500" />
+                  <span>Oakville, ON</span>
                 </div>
               </div>
-            </div>
             <div className="md:w-1/2 p-10 bg-slate-50">
               <form 
                 className="space-y-4" 
