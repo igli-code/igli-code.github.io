@@ -401,32 +401,36 @@ const App = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <Building2 className="w-5 h-5 text-amber-500 mt-1" />
-                  <span>3089 Cascade Common<br/>Oakville, ON, L6H 0R7</span>
+                  <span>Oakville, ON, L6H 0R7</span>
                 </div>
               </div>
             </div>
             <div className="md:w-1/2 p-10 bg-slate-50">
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+          <form 
+                className="space-y-4" 
+                action="https://formspree.io/f/mojylgok" 
+                method="POST"
+              >
                 <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-1">Company Name</label>
-                  <input type="text" className="w-full px-4 py-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-900 focus:outline-none" placeholder="Acme Corp" />
+                  <input type="text" name="company" required className="w-full px-4 py-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-900 focus:outline-none" placeholder="Acme Corp" />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-1">Email Address</label>
-                  <input type="email" className="w-full px-4 py-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-900 focus:outline-none" placeholder="you@company.com" />
+                  <input type="email" name="email" required className="w-full px-4 py-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-900 focus:outline-none" placeholder="you@company.com" />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-1">Inquiry Type</label>
-                  <select className="w-full px-4 py-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-900 focus:outline-none bg-white">
-                    <option>Procurement Readiness Audit</option>
-                    <option>Retainer Services</option>
-                    <option>Joint Venture Partnership</option>
-                    <option>Lost Bid Debrief</option>
+                  <select name="inquiry_type" className="w-full px-4 py-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-900 focus:outline-none bg-white">
+                    <option value="Procurement Readiness Audit">Procurement Readiness Audit</option>
+                    <option value="Retainer Services">Retainer Services</option>
+                    <option value="Joint Venture Partnership">Joint Venture Partnership</option>
+                    <option value="Lost Bid Debrief">Lost Bid Debrief</option>
                   </select>
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-slate-700 mb-1">Message</label>
-                  <textarea rows="3" className="w-full px-4 py-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-900 focus:outline-none" placeholder="How can we help you win?"></textarea>
+                  <textarea name="message" rows="3" required className="w-full px-4 py-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-900 focus:outline-none" placeholder="How can we help you win?"></textarea>
                 </div>
                 <button type="submit" className="w-full bg-slate-900 text-white font-bold py-3 rounded hover:bg-slate-800 transition-colors">
                   Request Consultation
