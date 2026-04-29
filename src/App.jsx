@@ -411,6 +411,7 @@ const App = () => {
                   <span>Oakville, ON</span>
                 </div>
               </div>
+            </div>
             <div className="md:w-1/2 p-10 bg-slate-50">
               <form 
                 className="space-y-4" 
